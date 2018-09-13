@@ -1,0 +1,9 @@
+<div style="text-align:center">
+    <h1>
+      Welcome to the Solar System!
+    </h1>
+    <a routerLink='/cadastro'>Cadastrar planeta</a>
+    <div *ngFor="let planeta of listaPlanetas">
+      <solar-planeta [dados]="planeta"></solar-planeta>
+    </div>
+  </div>
